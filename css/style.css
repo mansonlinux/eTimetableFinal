@@ -1,0 +1,174 @@
+/*.view {
+    background: url("#")no-repeat center center;
+    background-size: cover;
+} */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: transparent;
+    }
+}
+
+html,
+header,
+.view {
+  height: 100%;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+    background: url('#') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color:#fff;
+  	background-color:#333;
+}
+
+/* Google Map Responsive */
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* zoom images */
+.zoom {
+  background-color: transparent;
+  transition: transform .2s;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+/* zoom images toornament */
+.zoom1 {
+  padding: 0px;
+  background-color: transparent;
+  transition: transform .2s;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.zoom1:hover {
+   -ms-transform: scale(1.1); /* IE 9 */
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+
+
+.blue {
+  background-color: blue;
+}
+
+
+.bg1 { 
+  background-image: url("http://www.axis-tek.com/wp-content/uploads/favicon_axis_retina.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+/* Achievement Company CSS */
+
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: #e74c3c;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+  align-self: stretch;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #e74c3c;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #e74c3c;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid #e74c3c;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
